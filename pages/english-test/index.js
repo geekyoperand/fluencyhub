@@ -96,7 +96,7 @@ const T1 = styled.p`
   color: #5c5c5c;
 `;
 
-const Aboutenglish-test = styled.div`
+const Aboutenglish = styled.div`
   background-color: rgba(163, 238, 224, 0.38);
   display: flex;
   justify-content: center;
