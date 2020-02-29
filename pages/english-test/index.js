@@ -11,7 +11,7 @@ import Outcomes from "../../src/components/glover/Outcomes";
 import Topics from "../../src/components/glover/Topics";
 import Final from "../../src/components/glover/Final";
 
-class MPPGloverTownhall extends Component {
+class EnglishTest extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -29,7 +29,7 @@ class MPPGloverTownhall extends Component {
   }
 }
 
-export default hot(module)(MPPGloverTownhall);
+export default hot(module)(EnglishTest);
 
 const Main = styled.div`
   display: flex;
