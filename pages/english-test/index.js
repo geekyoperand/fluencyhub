@@ -7,9 +7,9 @@ import styled from "styled-components";
 import Link from "next/link";
 
 import LandingHeader from "../../src/components/LandingHeader";
-import Outcomes from "../../src/components/glover/Outcomes";
-import Topics from "../../src/components/glover/Topics";
-import Final from "../../src/components/glover/Final";
+import Outcomes from "../../src/components/english-test/Outcomes";
+import Topics from "../../src/components/english-test/Topics";
+import Final from "../../src/components/english-test/Final";
 
 class EnglishTest extends Component {
   constructor(props) {
@@ -96,7 +96,7 @@ const T1 = styled.p`
   color: #5c5c5c;
 `;
 
-const AboutGlover = styled.div`
+const Aboutenglish-test = styled.div`
   background-color: rgba(163, 238, 224, 0.38);
   display: flex;
   justify-content: center;

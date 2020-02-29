@@ -1,59 +1,49 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-class Topics extends Component {
+class Outcomes extends Component {
   render() {
     return (
       <Main>
         <Left>
-          <LImg src={require("../../../src/assets/mpp-glover/topics.png")} />
-        </Left>
-
-        <Right>
-          <H1>Topics</H1>
+          <H1>Goals / Outcomes</H1>
           <UL>
-            <LI>Waste creation</LI>
-            <LI>Energy consumption</LI>
-            <LI>Transportation habits</LI>
+            <LI>
+              Defining which progressive environmental policies can be pushed
+              based on your feedback/support
+            </LI>
+            <LI>
+              We’ll share the above + more insights with you and legislators
+            </LI>
           </UL>
 
           <Btn>Get Started</Btn>
+        </Left>
+
+        <Right>
+          <RImg
+            src={require("../../../src/assets/english-test/outcomes.png")}
+          />
         </Right>
       </Main>
     );
   }
 }
 
-export default Topics;
+export default Outcomes;
 
 const Main = styled.div`
   display: flex;
+  background-color: #ededed;
   padding: 8em 10%;
 `;
 
 const Left = styled.div`
   flex: 1;
-`;
-
-const LImg = styled.img`
-  width: 70%;
-  max-width: 360px;
-  display: block;
-  margin: auto;
-`;
-
-const Right = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-
-  p,
-  ul,
-  li {
-    text-align: right;
-  }
+  align-items: flex-start;
 `;
 
 const H1 = styled.p`
@@ -77,4 +67,13 @@ const Btn = styled.button`
   border-radius: 4px;
   font-size: 16px;
   margin-top: 20px;
+`;
+
+const Right = styled.div`
+  flex: 1;
+`;
+
+const RImg = styled.img`
+  width: 80%;
+  margin-left: 20%;
 `;
