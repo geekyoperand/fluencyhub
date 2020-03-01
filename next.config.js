@@ -3,9 +3,8 @@ const optimizedImages = require("next-optimized-images");
 const images = require("next-images");
 const { parsed: localEnv } = require("dotenv").config();
 const webpack = require("webpack");
-const withCSS = require("@zeit/next-css");
 
-let nextConfig = withCSS({
+let nextConfig = {
   webpack(config) {
     config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
     config.node = { fs: "empty" };
@@ -14,10 +13,8 @@ let nextConfig = withCSS({
     config.plugins = [...config.plugins];
 
     return config;
-  },
-  env: {},
-  cssModules: true
-});
+  }
+};
 
 module.exports = withPlugins(
   [
